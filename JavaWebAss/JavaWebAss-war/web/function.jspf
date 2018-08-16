@@ -1,0 +1,23 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" import="java.sql.*,java.security.MessageDigest, java.security.NoSuchAlgorithmException" %>
+
+<%!    
+    private String sha1(String input) throws NoSuchAlgorithmException {
+            MessageDigest mDigest = MessageDigest.getInstance("SHA1");
+            byte[] result = mDigest.digest(input.getBytes());
+            StringBuffer sb = new StringBuffer();
+            for (int i = 0; i < result.length; i++) {
+                sb.append(Integer.toString((result[i] & 0xff) + 0x100, 16).substring(1));
+            }
+            return sb.toString();
+        }
+
+%>
+
+<%
+    Class.forName("org.apache.derby.jdbc.ClientDriver");
+    String dbLoc  = "jdbc:derby://localhost:1527/ABC";
+    String dbUser = "john";
+    String dbPwd  = "john";
+    
+%>

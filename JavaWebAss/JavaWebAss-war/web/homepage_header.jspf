@@ -1,0 +1,43 @@
+
+        <div class="welcome"><h1>Welcome to EX Shopify</h1></div>
+        <form method="post">
+            <div class="topnav" id="myTopnav">
+                <!--<a class="active" href="#home">EX Shopify</a>-->
+                <a class="active" href="homepage.jsp"><img class="logo" src="Logo.png" alt="logo" width="110" height="110" /></a>
+
+                <span class="floatRight">
+                    <%                        String userid = (String) session.getAttribute("userid");
+                        if (userid == null) {
+                            out.println("<a href='Registration.jsp'>Create Account</a>");
+                            out.println("<a href='Login.jsp'>Login</a>");
+                        } else {
+                            out.println("<a href='viewcart.jsp'>View Cart</a>");
+                            out.println("<a href='purchaseHistory.jsp'>Purchase History</a>");
+                            out.println("<button class='logout' name='logout' type='submit'>Logout</button>");
+                        }
+                    %>
+                    <%
+                        String logout = request.getParameter("logout");
+                        if (logout != null) {
+                            session.invalidate();
+                            response.sendRedirect("Login.jsp");
+                        }
+                    %>
+                </span>
+
+                <!--                <div class="searchSpace">
+                                    <input type="text" name="txtSearch" placeholder="find your shoes" size="20"/>
+                                    <button type="submit" name="btnSearch">Search</button>
+                                </div>-->
+                <div class="box">
+                    <div class="container-4">
+                        <input type="search" name="txtSearch" id="search" placeholder="Search..." />
+                        <button class="icon" name="btnSearch"><i class="fa fa-search" ></i></button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <script type="text/javascript">
+                    breadcrumbs();
+                </script>
+            </div>

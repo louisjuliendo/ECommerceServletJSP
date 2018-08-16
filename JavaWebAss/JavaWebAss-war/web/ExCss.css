@@ -1,0 +1,94 @@
+/*#test p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s;  Safari, Chrome and Opera > 12.1 
+       -moz-animation: fadein 2s;  Firefox < 16 
+        -ms-animation: fadein 2s;  Internet Explorer 
+         -o-animation: fadein 2s;  Opera < 12.1 
+            animation: fadein 2s;
+}*/
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        .logo{
+          text-align: center;
+        }
+        .loginpg {
+/*          animation: 1s ease-out 0s 1 slideInFromLeft;*/
+          -webkit-animation: fadein 2s;
+          width: 360px;
+          padding: 8% 0 0;
+          margin: auto;
+        }
+        .form {
+          position: relative;
+          background: #FFFFFF;
+          max-width: 360px;
+          padding: 45px;
+          text-align: center;
+          opacity: 0.95;
+          filter: alpha(opacity=50);
+        }
+        .form input {
+          font-family: "Lucida Grande Medium";
+          background: #f2f2f2;
+          width: 100%;
+          border: 0;
+          margin: 0 0 15px;
+          padding: 15px;
+          box-sizing: border-box;
+          font-size: 14px;
+        }
+        .form select {
+          font-family: "Lucida Grande Medium";
+          background: #f2f2f2;
+          width: 100%;
+          border: 0;
+          margin: 0 0 15px;
+          padding: 15px;
+          box-sizing: border-box;
+          font-size: 14px;
+        }
+        .form button {
+          font-family: "Lucida Grande Medium";
+          outline: 0;
+          background: #343d2e;
+          width: 100%;
+          border: 0;
+          padding: 15px;
+          color: #FFFFFF;
+          font-size: 14px;
+          cursor: pointer;
+        }
+        .form button:hover,.form button:active,.form button:focus {
+          background: #896460;
+        }
+        .form .message {
+          font-family: "Lucida Grande Medium";
+          margin: 15px 0 0;
+          color: #b3b3b3;
+          font-size: 12px;
+        }
+        .form .messageerror {
+          font-family: "Lucida Grande Medium";
+          margin: 15px 0 0;
+          color: red;
+          font-size: 12px;
+        }
+        .title{
+          font-family: "Lucida Grande Medium";
+          margin: 15px 0 0;
+          color: black;
+          font-weight: bold;
+          font-size: 16px;         
+        }
+        body {
+          background-image: url("background2.jpg");
+          background-size: 100%;
+        }
+
