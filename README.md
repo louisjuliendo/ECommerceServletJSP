@@ -11,6 +11,30 @@ In this project, an ecommerce website of selling sport shoes will be produce at 
     5. Checkout </br>
     6. Payment </br>
     7. Update customer/product info </br>
+    ***
     
-    
+Below are screenshots of the system's main features:
+   ![web1](https://user-images.githubusercontent.com/24261678/44626462-6feb4400-a94f-11e8-8d04-ca08e1a45cb2.png)
+<p align="center"> Figure 1.0: Login page </p>
+
+
+
+![web2](https://user-images.githubusercontent.com/24261678/44626534-ad040600-a950-11e8-9771-c6a41ac443fb.png)
+<p align="center"> Figure 2.0: Registration page </p>
+
+
+
+![web3](https://user-images.githubusercontent.com/24261678/44626541-d6249680-a950-11e8-99d8-a79e15797e08.png)
+<p align="center"> Figure 3.0: Home page </p>
+
+
+
+![web4](https://user-images.githubusercontent.com/24261678/44626549-e6d50c80-a950-11e8-9ecf-95dcbfc50d54.jpg)
+<p align="center"> Figure 4.0: Sort and filter </p>
+
+
+
+![web5](https://user-images.githubusercontent.com/24261678/44626555-f18fa180-a950-11e8-9e32-4641bd54f0cc.png)
+<p align="center"> Figure 5.0: Shopping cart page </p>
+
     
